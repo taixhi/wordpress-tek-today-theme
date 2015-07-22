@@ -1,1 +1,0 @@
-# tek-today.com

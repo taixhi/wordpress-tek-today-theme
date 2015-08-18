@@ -1,0 +1,406 @@
+/*
+Theme Name: tekt
+Theme URI: http://www.tek-today.com
+Author: Arya VOHRA, Taichi KATO
+Author URI: http://www.tek-today.com
+Description: A good looking website theme.
+Version: Alpha 0.8
+License: non existent
+License URL: non existent
+Tags: tek, today, minimal
+Text Domain: tektoday
+*/
+//RESET
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, code, em, img, small, strong, sub, sup, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section, time, audio, video { margin: 0;
+	padding: 0; border: 0; font-size: 100%; font-weight: inherit; vertical-align: baseline; background: transparent; } article, aside, figure, footer, header, nav, section { display: block; } html { box-sizing: border-box; overflow-y: scroll; } *, *:before, *:after { box-sizing: inherit; }
+	img, object { max-width: 100%; } ul { list-style: none; } table { border-collapse: collapse; border-spacing: 0; } th { font-weight: bold; vertical-align: bottom; } td { font-weight: normal; vertical-align: top; } input, select { vertical-align: middle; } input[type="radio"]
+	{ vertical-align: text-bottom; } input[type="checkbox"] { vertical-align: bottom; } strong { font-weight: bold; } label, input[type="file"], button { cursor: pointer; } button, input, select, textarea { margin: 0; border: 0; }
+/*Code*/
+
+@media only screen and (max-device-width: 480px) {
+		div#wrapper {
+			width: 400px;
+		}
+
+		div#header {
+			height: 120px;
+			background-color: #333;
+			width: 100%;
+		}
+
+
+		#content {
+			float: none;
+			width: 100%;
+		}
+
+		#sidebar {
+			visibility: hidden;
+
+		}
+		#navbar{
+			margin-bottom: 3px;
+		}
+
+		nav ul li a{
+		  padding: 5px 5px;
+		}
+	}
+html {
+    margin-top: 0px;
+		font-family: helvetica;
+		font-weight: lighter;
+}
+#footer p{
+	margin: 0;
+	font-size: smaller;
+}
+
+a#meher{
+	margin-left: 790px;
+}
+
+footer{
+	overflow: auto;
+	padding-left: 10%;
+}
+
+div.header img{
+	width: 150px;
+	padding-top: 13px;
+}
+#navbar a:link {
+
+	cursor: pointer;
+	color:#333;
+	font-size: 13.5px;
+	text-decoration:none;
+	padding-top: 9px;
+	margin-right: 20px;
+	padding-bottom: 11px;
+}
+
+#navbar a:hover {
+  background:#333;
+	color:#fff;
+	text-decoration:none;
+}
+
+#navbar ul{
+	padding-left: 10%;
+  padding-top: 4px;
+	padding-bottom: 10px;
+
+}
+
+div.content a:link {
+  color:#000;text-decoration:none;
+}
+
+div.content a:visited {
+  color:#000;text-decoration:none;
+}
+h2{
+	font-size: 32px;
+}
+#visual_main{
+	text-align: center;
+}
+
+#recent_post{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+		margin-bottom:50px;
+
+
+}
+#recent_post a{
+    color: #fff;
+    text-decoration: none;
+    font-family: helvetica;
+		font-weight: bold;
+    font-size: 45px;
+}
+
+div.content{
+  background: #ffffff;
+	float: center;
+	align: center;
+	padding-left:10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: calc(10% + 10px);
+
+}
+
+nav, footer{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+	font-weight: lighter;
+
+}
+.pagecontent{
+	background: #ffffff;
+	float: center;
+	align: center;
+	padding-left:10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#container{
+	width:100%;
+}
+
+#header{
+  width: 100%;
+  background: #333;
+}
+#right_header {
+	padding-top: 15px;
+	padding-right: 10%;
+}
+
+#header_wrapper {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+		height: 52px;
+		margin-left: 10%
+}
+#logo {
+	-webkit-flex: 1;  /* Safari 6.1+ */
+		-ms-flex: 1;  /* IE 10 */
+		flex: 1;
+}
+#login_button{
+		-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+		align-content: flex-end;
+		margin: 0 auto;
+		float:right;
+		text-decoration:none;
+		padding-top: 2px;
+}
+#searchform{
+		-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+		align-content: flex-end;
+		margin: 0 auto;
+		float:right;
+		margin-top: -5px;
+		margin-right: 20px;
+		box-shadow: none;
+		margin-left: 30px;
+
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+		font-size:12px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFF;
+   opacity:  1;
+	 font-size:12px;
+
+
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFF;
+   opacity:  1;
+	 font-size:12px;
+
+
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFF;
+	 font-size:12px;
+
+}
+#searchsubmit{
+	width:15px;
+	background: transparent;
+}
+#searchh :hover:after{
+	content: ' ';
+	background-image: url(http://i.imgur.com/vuobtzi.png);
+	width:150px;
+	margin-top: 50px;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: none;
+}
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 5px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 2px solid #DDDDDD;
+	font-weight: lighter;
+}
+
+header > input{
+	background: #333
+}
+
+#bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 5px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 2px solid #DDDDDD;
+	font-weight: lighter;
+
+}
+input{
+	background: #333;
+	color: #fff;
+	margin-left: 5px;
+}
+
+input.placeholder{
+	color: #ffffff;
+	padding-left: 5px;
+}
+
+label{
+	float:left;
+	padding-left: 10px;
+}
+#login_button:hover{
+	color: #17a8e3;
+	background-color: #333;
+}
+
+textarea#comment{
+	border: solid #000 1px;
+}
+
+#login_button{
+	clear:both;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #fff;
+	margin-top:-5px;
+	padding-top: 7px;
+}
+
+#footer{
+	margin: 0 auto;
+	background: #333;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+}
+
+nav{
+	background: #fff;
+}
+
+nav ul li{
+  display: inline-block;
+
+}
+
+nav ul li a{
+	padding-left: 13px;
+	padding-right: 13px;
+}
+
+body{
+	margin: 1px;
+	margin-top:-2px;
+	margin-right:-2px;
+	margin-left:-2px;
+	margin-bottom: -2px;
+}
+
+ul{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin:0px;
+}
+
+div.article{
+	background: #ffffff;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom: black solid 1px;
+	width: 30%;
+  float: left;
+}
+
+.visual_banner{
+	width: 100%;
+	height: 400px!important;
+	overflow: hidden!important;
+	margin-bottom: -10%;
+	position: relative;
+  background-color: rgb(0, 0, 0);
+
+}
+.visual_banner img{
+	object-fit: cover;
+	overflow: hidden!important;
+  opacity: 0.65;
+  opacity:0.65;
+  background-color:black;
+  left: 0; top: 0; height: 100%; width: 100%;
+
+}
+.article > h2 > a{
+
+    font-weight: 400;
+
+}
+p#subtitle_banner{
+	font-weight: lighter;
+	font-size: 27px;
+	align-content: center;
+	color: #fff;
+	margin-top: 5px;
+}
+
+a#read_more{
+	font-size: 18px;
+	font-weight: bold;
+	border: solid #fff 4px;
+	padding: 6px 8px 6px 8px;
+	margin-top: -10px;
+}
+a:hover#read_more{
+	transition: background-color 0.5s linear;
+	background-color: #333;
+}
+
+#line_banner{
+	border-bottom: solid #fff 4px;
+	width:70px;
+	margin-bottom: 28px;
+}
+/* Makes three columns */
+.ms-item {
+width: 23%;
+}
+p{font
+	font-size: 14px
+}
+h2{
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+	font-size: 20px;
+	font-weight: lighter;
+}

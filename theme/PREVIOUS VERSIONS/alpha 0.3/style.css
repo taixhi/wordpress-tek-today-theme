@@ -1,0 +1,42 @@
+/*
+Theme Name: tekt
+Theme URI: http://www.tek-today.com
+Author: Arya VOHRA, Taichi KATO
+Author URI: http://www.tek-today.com
+Description: A good looking website theme.
+Version: Alpha 0.3
+License: non existent
+License URL: non existent
+Tags: tek, today, minimal
+Text Domain: tektoday
+*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+body{
+  background: silver;
+  font-family: 16px, 'Raleway', sans-serif;
+}
+
+#header{
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 16px, 'Raleway', sans-serif;
+
+}
+
+#footer{
+  width: 800px;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: 16px, 'Raleway', sans-serif;
+
+}
+#sidebar{
+  border: 1px;
+  float: right;
+  width: 200px
+}

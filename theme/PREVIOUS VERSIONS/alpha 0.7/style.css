@@ -1,0 +1,118 @@
+/*
+Theme Name: tekt
+Theme URI: http://www.tek-today.com
+Author: Arya VOHRA, Taichi KATO
+Author URI: http://www.tek-today.com
+Description: A good looking website theme.
+Version: Alpha 0.7
+License: non existent
+License URL: non existent
+Tags: tek, today, minimal
+Text Domain: tektoday
+*/
+//RESET
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, code, em, img, small, strong, sub, sup, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section, time, audio, video { margin: 0;
+	padding: 0; border: 0; font-size: 100%; font-weight: inherit; vertical-align: baseline; background: transparent; } article, aside, figure, footer, header, nav, section { display: block; } html { box-sizing: border-box; overflow-y: scroll; } *, *:before, *:after { box-sizing: inherit; }
+	img, object { max-width: 100%; } ul { list-style: none; } table { border-collapse: collapse; border-spacing: 0; } th { font-weight: bold; vertical-align: bottom; } td { font-weight: normal; vertical-align: top; } input, select { vertical-align: middle; } input[type="radio"]
+	{ vertical-align: text-bottom; } input[type="checkbox"] { vertical-align: bottom; } strong { font-weight: bold; } label, input[type="file"], button { cursor: pointer; } button, input, select, textarea { margin: 0; border: 0; }
+/*Code*/
+
+html {
+    margin: 0px;
+}
+footer{
+	overflow: auto;
+}
+div.header img{
+	width: 20%;
+	margin-left: 10%;
+}
+div.menu a:link {
+  color:#fff;text-decoration:none;
+}
+div.menu a:hover {
+  background:#55637D; color:#000;text-decoration:none;
+}
+
+div.menu a:visited {
+  color:#fff;text-decoration:none;
+}
+
+
+
+div.content a:link {
+  color:#00f;text-decoration:none;
+}
+div.content a:visited {
+  color:#00f;text-decoration:none;
+}
+
+
+
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	font-size: 32px;
+}
+#left{
+  background: silver;
+	float: center;
+	align: center;
+	margin: 0 auto;
+	float: left;
+	width: 84%;
+
+}
+
+nav, footer{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+
+}
+
+#container{
+	overflow: auto;
+}
+
+#header{
+  width: 100%;
+  background: #445878;
+  color: #fff;
+}
+
+#footer{
+  width: 100%;
+  margin: 0 auto;
+  background: #0675bc;
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar{
+  border: 1px;
+  float: right;
+  width: 15%;
+}
+
+nav{
+	background: #0675bc;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  padding: 10px 20px;
+}
+
+body{
+	margin: 1px;
+}
+
+ul{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

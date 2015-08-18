@@ -1,0 +1,122 @@
+/*
+Theme Name: tekt
+Theme URI: http://www.tek-today.com
+Author: Arya VOHRA, Taichi KATO
+Author URI: http://www.tek-today.com
+Description: A good looking website theme.
+Version: Alpha 0.4
+License: non existent
+License URL: non existent
+Tags: tek, today, minimal
+Text Domain: tektoday
+*/
+@font-face {
+    font-family: mainFont;
+    src: url(coolvetica.tff);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: caption;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*code*/
+h2{
+	font-size: 32px;
+}
+#body{
+  background: #fff;
+  font: 16px, 'Raleway', sans-serif;
+}
+
+div{
+	font-family: mainFont;
+}
+#content{
+  background: silver;
+  font-family: 16px, 'Raleway', sans-serif;
+  width: 70%;
+	float: center;
+	align: center;
+	margin: 0 auto;
+}
+
+#header, #nav, #footer{
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+
+#header{
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-family: 16px, 'Raleway', sans-serif;
+}
+
+#footer{
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-family: 16px, 'Raleway', sans-serif;
+}
+#sidebar{
+  border: 1px;
+  float: right;
+  width: 200px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  padding: 10px 20px;
+}

@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="middle_wrapper">
-<div id="left" class="content">
+<div id="single_content" class="content">
   <div id="recent_post">
     <div style="position: relative; left: -50%; border:">
 

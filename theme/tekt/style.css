@@ -110,6 +110,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 #front_content{
   width: 100%;
+	margin: auto;
+	margin-top: 13%;
 }
 #front-entry-title{
 	color: #fff;
@@ -289,6 +291,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 #single_category > p{
 	text-align: right;
 }
+#single_content{
+	width: 40em;
+	margin-top: 13%;
+}
 #single_utility{
 	width: 100%
 }
@@ -321,6 +327,11 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .clearer{
 	clear: both;
 }
+.clearfix{
+  overflow: auto;
+  zoom: 1;
+	clear: both;
+}
 .comment-body p{
 	border: 1px solid #d2d2d2;
 	padding: 10px 20px 10px;
@@ -350,9 +361,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	font-weight: normal;
 }
 .middle_wrapper{
-	min-width: 925px;
-	max-width: 1200px;
-	float: center;
+  max-width: 1000px;
+	min-width: 600px;
+  padding-top: 5%;
 	margin: auto;
 }
 .pagecontent{
@@ -438,7 +449,7 @@ body{
 }
 div.content{
 	align-content: center;
-	max-width: 1200px;
+	max-width: 1000px;
 	min-width: 600px;
 	width: 40em;
 

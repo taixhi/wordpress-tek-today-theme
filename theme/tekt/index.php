@@ -37,6 +37,7 @@
 
 
 <div id="front_content" class="content">
+  <div style="margin-right= 30px">
   <?php while ( have_posts() ) : the_post(); $postno; $postno++; $column;
   switch ($postno % 3) {
     case 0:
@@ -72,9 +73,12 @@
   				                </div><!-- #post-<?php the_ID(); ?> -->
 
   				<?php endwhile; ?>
-          <div class="clearer"></div>
+          <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
 </div>
 </div>
+
 
 <?php get_footer()?>
 </html>

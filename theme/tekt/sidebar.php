@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-<div id="sidebar">
-  <h1>This is a sidebar</h1>
-
-  <?php dynamic_sidebar('tekt');?>
-</div>
+<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
 </html>

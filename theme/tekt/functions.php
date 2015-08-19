@@ -128,8 +128,8 @@ return $output;
 
 function tekt_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Side Sidebar', 'tekt' ),
-		'id' => 'sidebar-2',
+		'name' => 'tekt',
+		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<div class="widget-title">',

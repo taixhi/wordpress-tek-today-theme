@@ -38,9 +38,11 @@
 
   <?php comments_template('',true);?>
 </div>
+<?php get_sidebar();?>
 </div>
-<?php get_sidebar('tekt'); ?>
-<?php get_footer()?>
+
+<?php get_sidebar();?>
+<?php get_footer();?>
 <?php wpb_set_post_views(get_the_ID());?>
 <?php wpb_get_post_views(get_the_ID());?>
 </html>

@@ -1,11 +1,6 @@
-<?php
-	// A second sidebar for widgets, just because.
-	if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
-		<div id="secondary" class="widget-area" role="complementary">
+	<div id="sidebar">
 			<ul class="xoxo">
-				<?php dynamic_sidebar( 'tekt' ); ?>
+				Sidebar
+        <?php dynamic_sidebar( 'right_sidebar' ); ?>
 			</ul>
 		</div><!-- #secondary .widget-area -->
-
-<?php endif; ?>

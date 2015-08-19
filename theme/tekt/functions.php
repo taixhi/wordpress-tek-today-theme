@@ -127,16 +127,17 @@ return $output;
 }
 
 
-function tekt_widgets_init() {
-	register_sidebar( array(
-		'name' =>  __( 'tekt Sidebar', 'tekt' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<div class="widget-title">',
-		'after_title' => '</div>',
-	) );
+// Register Sidebars
+function tekt() {
+
+	$args = array(
+		'id'            => 'right_sidebar',
+		'class'         => 'right_sidebar',
+		'name'          => __( 'right_sidebar', 'text_domain' ),
+		'description'   => __( 'Sidebar located on the right of the page', 'text_domain' ),
+	);
+	register_sidebar( $args );
 
 }
-add_action( 'widgets_init', 'tekt_widgets_init' );
+add_action( 'widgets_init', 'tekt' );
 ?>

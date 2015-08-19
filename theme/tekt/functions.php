@@ -1,12 +1,13 @@
 <?php
  add_theme_support( 'post-thumbnails' );
 
- function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
-}
-add_action( 'init', 'register_my_menu' );
+  function register_my_menu() {
+   register_nav_menu('header-menu',__( 'Header Menu' ));
+  }
+  add_action( 'init', 'register_my_menu' );
 
- add_filter('show_admin_bar', '__return_false');
+
+add_filter('show_admin_bar', '__return_false');
 
  function my_custom_login() {
 echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
@@ -128,7 +129,7 @@ return $output;
 
 function tekt_widgets_init() {
 	register_sidebar( array(
-		'name' => 'tekt',
+		'name' =>  __( 'tekt Sidebar', 'tekt' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",

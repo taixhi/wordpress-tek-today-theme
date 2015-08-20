@@ -223,6 +223,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   text-decoration: none;
 }
 #recent_post{
+	width: 100%;
 	overflow-x: inherit;
 	right: 50%;
 	margin-bottom: 50px;
@@ -565,6 +566,7 @@ p#subtitle_banner{
 	font-size: 27px;
 	font-weight: lighter;
 	margin-top: 5px;
+	margin: auto;
 }
 textarea#comment{
 	border: solid #000 1px;

@@ -2,7 +2,7 @@
 <html>
 <?php get_header()?>
 <div id="visual_main">
-  <div class="visual_banner">
+  <div class="visual_banner" id="single_banner">
         <?php if (has_post_thumbnail() ) {
   	    the_post_thumbnail();
         } ?>

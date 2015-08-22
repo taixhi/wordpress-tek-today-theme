@@ -7,9 +7,6 @@
   	    the_post_thumbnail();
         } ?>
   </div>
-</div>
-<div class="middle_wrapper">
-<div id="single_content" class="content">
   <div id="recent_post">
     <div style="position: relative;">
 
@@ -18,6 +15,9 @@
 
   </div>
   </div>
+</div>
+<div class="middle_wrapper">
+<div id="single_content" class="content">
     <p id="single_subtitle"><?php the_subtitle()?></p>
 <div id="single_utility">
 <span class="author vcard">

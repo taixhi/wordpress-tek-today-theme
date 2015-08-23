@@ -23,7 +23,7 @@
 </span>
 </div>
 
-<div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
+<div id="single_category"><a><strong>Posted in:</strong> <?php the_category(', '); ?></a></div>
   <?php the_content(__('Continue Reading'));?>
   <?php endwhile;?>
   <h3>Comments</h3>

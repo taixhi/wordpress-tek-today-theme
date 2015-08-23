@@ -7,14 +7,6 @@
   	    the_post_thumbnail();
         } ?>
   </div>
-  <div id="recent_post">
-    <div style="position: relative;">
-
-  <?php while(have_posts()): the_post()?>
-    <p id="single_title"><?php the_title()?></p>
-
-  </div>
-  </div>
 </div>
 <div class="middle_wrapper">
 <div id="single_content" class="content">

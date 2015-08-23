@@ -23,7 +23,7 @@
         } ?>
   </div>
   <div id="recent_post">
-    <div style="position: relative; right: -50%;">
+    <div style="position: relative;">
           <h2> <?php $recent = new WP_Query("showposts=1"); while($recent->have_posts()) : $recent->the_post();?>
                    <a id ="most_recent" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                    <p id ="subtitle_banner"><?php get_the_subtitle( $post ); ?></p></li>

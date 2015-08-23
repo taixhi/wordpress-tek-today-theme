@@ -23,9 +23,9 @@
   <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?>
   </abbr>
 </span>
+<div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
 </div>
 
-<div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
   <?php the_content(__('Continue Reading'));?>
   <?php endwhile;?>
   <h3>Comments</h3>

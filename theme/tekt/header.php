@@ -31,8 +31,6 @@ $(window).load(function(){
   <div id="header_wrapper">
     <a href="<?php echo home_url('/')?>" id='logo'><img src="http://i.imgur.com/bFBnqdr.png"></a>
     <div id="right_header" class="right_header">
-            <a href="<?php bloginfo('wpurl')?>/wp-admin" id="login_button">Admin</a>
-            <a href="<?php bloginfo('wpurl')?>/registration" id="login_button">Sign Up</a>
             <a href="<?php bloginfo('wpurl')?>/login" id="login_button">Login</a>
       <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
         <div>

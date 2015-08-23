@@ -230,7 +230,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 #recent_post{
 	width: 100%;
 	overflow-x: inherit;
-	right: 50%;
 	margin-bottom: 50px;
 	min-width: 960px;
 	position: absolute;
@@ -283,10 +282,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 #single_category{
 	float: right;
-	width: 100%;
 }
 #single_category > p{
 	text-align: right;
+	margin: 0;
 }
 #single_content{
 	width: 40em;

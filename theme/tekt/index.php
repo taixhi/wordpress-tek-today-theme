@@ -38,7 +38,9 @@
 
 <div id="front_content" class="content">
   <div style="margin-right= 30px">
-  <?php while ( have_posts() ) : the_post(); $postno; $postno++; $column;
+  <?php
+  query_posts('offset=1');
+  while ( have_posts() ) : the_post(); $postno; $postno++; $column;
   switch ($postno % 3) {
     case 0:
         $column = 3;

@@ -11,8 +11,10 @@
   </div>
 <div id="single_content" class="content">
   <?php while(have_posts()): the_post()?>
-
+    <p id ="single_title"><?php the_title(); ?></p>
     <p id="single_subtitle"><?php the_subtitle()?></p>
+    <hr style="background:#888; border:0; height:1px" />
+
 <div id="single_utility">
 <span class="author vcard">
   <a class="url fn n" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'hbd-theme' ), $authordata->display_name ); ?>">
@@ -25,7 +27,7 @@
 </span>
 <div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
 </div>
-
+<hr style="background:#888; border:0; height:1px" />
   <?php the_content(__('Continue Reading'));?>
   <?php endwhile;?>
   <h3>Comments</h3>

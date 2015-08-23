@@ -22,44 +22,56 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	.article {
 	width: calc(25% - 20px);
 	}
+
 }
 
 /* START OF MOBILE SECTION */
 
-@media only screen and (max-device-width: 480px) {
-	.article {
-	width: calc(50% - 20px);
+@media only screen and (max-device-width: 768px) {
+	.article{
+		width: 100%!important;
 	}
-	nav{
+	#article-thumb{
+		height: 200px;
+	}
+	#right_header{
+		visibility: hidden;
+		width: 0px;
+	}
+	#1{
 		visibility: hidden;
 	}
-		div#wrapper {
-			width: 400px;
-		}
-
-		div#header {
-			height: 120px;
-			background-color: #333;
-			width: 100%;
-		}
-
-
-		#content {
-			float: none;
-			width: 100%;
-		}
-
-		#sidebar {
-			visibility: hidden;
-
-		}
-		#navbar{
-			margin-bottom: 3px;
-		}
-
-		nav ul li a{
-		  padding: 5px 5px;
-		}
+	ul {
+		width:100%;
+	  list-style:none;
+	}
+	li {
+		width:100%;
+		border-right:none;
+	}
+	.visual_banner{
+		height: 200px;
+	}
+	.column-1 >a{
+		width: 100%!important;
+	}
+	.column-2 >a{
+		width: 100%!important;
+	}
+	.column-3 >a{
+		width: 100%!important;
+	}
+	#menu_icon {
+		visibility: visible;
+		width:52px;
+		display: block;
+		background:#ddd;
+		font-size:36px;
+		text-align: center;
+	}
+	.menu{
+		display: none;
+	}
 	}
 
 /* END OF MOBILE SECTION*/
@@ -70,9 +82,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	margin-bottom: -15px;
 }
 #article-thumb > a{
+	background-color: black;
 	padding-top: -40px;
 	display: block;
-	width: 900px;
 }
 #article-wrapper{
 	overflow: hidden;
@@ -109,14 +121,16 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-bottom: 10px;
 	padding-left: 10%;
 	padding-top: 10px;
+  margin-top: 20px;
 }
 #footer p{
 	font-size: smaller;
+	margin: 5px;
 }
 #front_content{
   width: 100%;
 	margin: auto;
-	margin-top: 13%;
+	margin-top: 0;
 }
 #front-entry-title{
 	color: #fff;
@@ -175,11 +189,16 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 #login_button:hover{
 	background-color: #333;
 	color: #17a8e3;
+	margin-right: auto;
+	float: left;
 }
 #logo{
 	flex: 1;
 	ms-flex: 1;
 	webkit-flex: 1;
+}
+#menu_icon{
+	visibility: hidden;
 }
 #navbar a:hover{
 	background: #333;
@@ -230,10 +249,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 #recent_post{
 	width: 100%;
 	overflow-x: inherit;
-	margin-bottom: 50px;
-	min-width: 960px;
-	position: absolute;
-	top: 25%;
+	margin-bottom: 150px;
+	position: inherit;
+	margin-top: -300px;
 }
 #recent_post a{
 	color: #fff;
@@ -350,13 +368,13 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding: 5px;
 }
 .column-1 >a{
-	width: 300px!important;
+	width: 300px;
 }
 .column-2 > a{
-	width: 500px!important;
+	width: 500px;
 }
 .column-3 > a{
-	width: 400px!important;
+	width: 400px;
 }
 .fn{
 	font-style: normal;
@@ -364,8 +382,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 .middle_wrapper{
   max-width: 1000px;
-	min-width: 600px;
 	margin: auto;
+}
+.menu-item{
+	padding-bottom: 0;
 }
 .pagecontent{
 	align: center;
@@ -406,6 +426,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	display: block;
 	height: auto;
 	width: 100%;
+	opacity: 0.7;
 }
 ::-moz-placeholder{
 	color: #FFF;
@@ -425,11 +446,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	color: #FFF;
 	font-size: 12px;
 }
-a#meher{
-	margin-left: 790px;
-	margin-left: calc(100% - 200px);
-	text-align: right;
-}
 a#read_more{
 	border: solid #fff 4px;
 	font-size: 18px;
@@ -440,6 +456,9 @@ a#read_more{
 a:link {
   color: #000;
   text-decoration: none;
+}
+a:visited{
+	color: #000;
 }
 a:hover#read_more{
 	background-color: #333;
@@ -455,7 +474,6 @@ body{
 div.content{
 	align-content: center;
 	max-width: 1000px;
-	min-width: 600px;
 	width: 40em;
 
 	margin-top: 13%;
@@ -470,12 +488,11 @@ div.content a:visited{
 }
 div.header img{
 	padding-top: 13px;
-	width: 150px;
+	height: 40px;
 }
 footer{
 	overflow: auto;
 	padding-left: 10%;
-	height: 70px;
 }
 h2{
 	font-size: 32px;
@@ -523,9 +540,12 @@ label{
 	float: left;
 	padding-left: 10px;
 }
+
 li{
 	list-style-type: none;
+	padding-bottom: 10px;
 }
+
 nav{
 	background: #fff;
 }
@@ -548,6 +568,9 @@ line-height: 1.5;
 margin-bottom: 1em;
 	font-size: 14px;
 }
+p#meher{
+	float: right;
+}
 p#single_category{
 	float: right;
 	margin: 0;
@@ -558,15 +581,14 @@ p#single_subtitle{
 	font-size: 27px;
 	font-weight: lighter;
 	height: 31px;
-	margin-top: 5px;
-	padding-bottom: 50px;
+	margin-top: 0px;
+	color: #666;
 }
 p#single_title{
-	color: white;
+	color: #222;
 	font-size: 45px;
 	font-weight: bold;
 	margin-bottom: 0px;
-	text-align: center;
 }
 p#subtitle_banner{
 	align-content: center;
@@ -575,6 +597,9 @@ p#subtitle_banner{
 	font-weight: lighter;
 	margin-top: 5px;
 	margin: auto;
+}
+p#theme_cr{
+	float: left;
 }
 textarea#comment{
 	border: solid #000 1px;

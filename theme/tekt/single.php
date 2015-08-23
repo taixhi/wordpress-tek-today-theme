@@ -7,7 +7,7 @@
   	    the_post_thumbnail();
         } ?>
   </div>
-  <div id="recent_post">
+  <div id="single_sub recent_post">
     <div style="position: relative;">
 
   <?php while(have_posts()): the_post()?>

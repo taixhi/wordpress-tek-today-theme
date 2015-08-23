@@ -1,15 +1,17 @@
 <!doctype html>
 <html>
 <?php get_header()?>
-<div id="visual_main">
+
+</div>
+<div class="middle_wrapper">
   <div class="visual_banner" id="single_banner">
         <?php if (has_post_thumbnail() ) {
   	    the_post_thumbnail();
         } ?>
   </div>
-</div>
-<div class="middle_wrapper">
 <div id="single_content" class="content">
+  <?php while(have_posts()): the_post()?>
+
     <p id="single_subtitle"><?php the_subtitle()?></p>
 <div id="single_utility">
 <span class="author vcard">
@@ -21,9 +23,13 @@
   <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?>
   </abbr>
 </span>
+<div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
 </div>
 
+<<<<<<< HEAD
 <div id="single_category"><a><strong>Posted in:</strong> <?php the_category(', '); ?></a></div>
+=======
+>>>>>>> origin/master
   <?php the_content(__('Continue Reading'));?>
   <?php endwhile;?>
   <h3>Comments</h3>

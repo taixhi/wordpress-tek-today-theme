@@ -24,6 +24,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	}
 }
 
+/* START OF MOBILE SECTION */
+
 @media only screen and (max-device-width: 480px) {
 	.article {
 	width: calc(50% - 20px);
@@ -59,6 +61,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 		  padding: 5px 5px;
 		}
 	}
+
+/* END OF MOBILE SECTION*/
+
 #article-thumb{
 	background: black;
 	margin: 30px;

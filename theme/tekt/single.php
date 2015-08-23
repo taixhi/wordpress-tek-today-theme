@@ -1,15 +1,17 @@
 <!doctype html>
 <html>
 <?php get_header()?>
-<div id="visual_main">
+
+</div>
+<div class="middle_wrapper">
   <div class="visual_banner" id="single_banner">
         <?php if (has_post_thumbnail() ) {
   	    the_post_thumbnail();
         } ?>
   </div>
-</div>
-<div class="middle_wrapper">
 <div id="single_content" class="content">
+  <?php while(have_posts()): the_post()?>
+
     <p id="single_subtitle"><?php the_subtitle()?></p>
 <div id="single_utility">
 <span class="author vcard">

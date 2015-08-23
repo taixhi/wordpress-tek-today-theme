@@ -556,9 +556,13 @@ nav, footer{
 	width: 100%;
 }
 p{
+<<<<<<< HEAD
 	font-size: 16px;
 line-height: 1.5;
 margin-bottom: 1em;
+=======
+	font-size: 14px;
+>>>>>>> parent of bb69f76... fixed title
 }
 p#single_category{
 	float: right;

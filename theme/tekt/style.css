@@ -62,7 +62,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 		width: 100%!important;
 	}
 	#menu_icon {
-		visibility: visible;
+		visibility: visible!important;
 		width:52px;
 		display: block;
 		background:#ddd;
@@ -80,6 +80,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	background: black;
 	margin: 30px;
 	margin-bottom: -15px;
+	position: relative;
 }
 #article-thumb > a{
 	background-color: black;
@@ -88,6 +89,12 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 #article-wrapper{
 	overflow: hidden;
+}
+#author_content{
+	width: 100%;
+	margin: auto;
+	margin-top: 0;
+	max-width: 1000px;
 }
 #bbpress-forums div.bbp-the-content-wrapper textarea.bbp-the-content{
 	border: 2px solid #DDDDDD;
@@ -133,6 +140,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	margin-top: 0;
 }
 #front-entry-title{
+	padding-left: 40px;
 	color: #fff;
 	position: absolute;
 	margin-left: auto;
@@ -190,7 +198,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	background-color: #333;
 	color: #17a8e3;
 	margin-right: auto;
-	float: left;
 }
 #logo{
 	flex: 1;
@@ -225,16 +232,22 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-left: 0px;
 	padding-top: 4px;
 }
+#nomargin_sidebar{
+	margin-top: 0!important;
+}
 #post-1, #post-4, #post-1,
 #posted_category{
 	width: 100%;
 }
 #readmore_grid{
 	position: absolute;
-	left: 40%;
+	left: 0;
+  padding-left: 40px;
 	bottom: 30px;
 	font-weight: lighter;
 	font-size: 13px;
+	width: 100%;
+	text-align: center;
 	color: #fff!important;
 
 }
@@ -328,7 +341,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	min-height: 80px;
 	padding: 5px;
 	position: absolute;
-	width: calc(100% - 20px);
+	width: 100%;
 	text-align: center;
 	color: #fff!important;
 }
@@ -512,6 +525,10 @@ header > input{
 html{
 	font-family: helvetica;
 	font-weight: lighter;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 input{
 	background: #333;

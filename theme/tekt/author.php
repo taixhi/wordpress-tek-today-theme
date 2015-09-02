@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-  <div id="container">
-  <div id="content">
+  <div id="author_content">
+  <div id="single_content">
 
 <?php the_post(); ?>
   <h1 class="page-title author"><?php printf( __( '<span class="vcard">%s</span>', 'hbd-theme' ), "<a class='url fn n' href='$authordata->user_url' title='$authordata->display_name' rel='me'>$authordata->display_name</a>" ) ?></h1>
@@ -16,6 +16,7 @@
 <?php } ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
+  <hr>
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'hbd-theme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
   <div class="entry-meta">
@@ -50,7 +51,7 @@
 				<?php } ?>
 
             </div><!-- #content -->
-			<?php get_sidebar(); ?>
+			<div id="nomargin_sidebar"<?php get_sidebar(); ?></div>
         </div><!-- #container -->
 
 <?php get_footer(); ?>

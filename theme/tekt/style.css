@@ -507,6 +507,13 @@ footer{
 	overflow: auto;
 	padding-left: 10%;
 }
+h1#single_subtitle{
+	color: #222;
+font-size: 45px;
+font-weight: bold;
+margin-bottom: 0px;
+margin-top: 70px;
+}
 h2{
 	font-size: 32px;
 }
@@ -597,7 +604,6 @@ p#single_subtitle{
 	align-content: center;
 	font-size: 27px;
 	font-weight: lighter;
-	height: 31px;
 	margin-top: 0px;
 	color: #666;
 }

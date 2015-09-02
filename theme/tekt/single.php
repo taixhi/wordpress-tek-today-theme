@@ -12,7 +12,7 @@
 <div id="single_content" class="content">
   <?php while(have_posts()): the_post()?>
     <p id ="single_title"><?php the_title(); ?></p>
-    <p id="single_subtitle"><?php the_subtitle()?></p>
+    <h1 id="single_subtitle"><?php the_subtitle()?></h1>
     <hr style="background:#888; border:0; height:1px" />
 
 <div id="single_utility">

@@ -13,7 +13,7 @@
   <?php while(have_posts()): the_post()?>
     <p id ="single_title"><?php the_title(); ?></p>
     <p id="single_subtitle"><?php the_subtitle()?></p>
-    <hr style="background:#888; border:0; height:1px" />
+    <hr style="background:#888; border:0; height:1px; margin-bottom:10px" />
 
 <div id="single_utility">
 <span class="author vcard">
@@ -25,9 +25,9 @@
   <abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?>
   </abbr>
 </span>
-<div id="single_category"><p>Posted in: <?php the_category(', '); ?></p></div>
+<div id="single_category"><span>Posted in: <?php the_category(', '); ?></span></div>
 </div>
-<hr style="background:#888; border:0; height:1px" />
+<hr style="background:#888; border:0; height:1px; margin-top:10px;" />
   <?php the_content(__('Continue Reading'));?>
   <?php endwhile;?>
   <h3>Comments</h3>

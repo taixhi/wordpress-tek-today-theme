@@ -65,13 +65,24 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 		visibility: visible!important;
 		width:52px;
 		display: block;
-		background:#ddd;
-		font-size:36px;
+		background: #333;
+		font-size: 30px;
+		font-weight: lighter;
 		text-align: center;
+		color: white;
 	}
 	.menu{
 		display: none;
 	}
+
+	#single_content{
+		width: calc(100% - 40px)!important;
+		margin-top: 0px !important;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	}
+
 	}
 
 /* END OF MOBILE SECTION*/
@@ -324,7 +335,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 #single_content{
 	width: 40em;
-	margin-top: 60px!important;
+	margin-top: 60px;
 	float: left;
 }
 #single_sub{

@@ -136,4 +136,17 @@ function tekt() {
 
 }
 add_action( 'widgets_init', 'tekt' );
+// Register Sidebars
+function tekt2() {
+
+	$args = array(
+		'id'            => 'bottom_widget',
+		'class'         => 'bottom_widget',
+		'name'          => __( 'Bottom Widget', 'bottom_widget' ),
+		'description'   => __( 'Sidebar located on the bottom of the page', 'bottom_widget' ),
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'tekt2' );
 ?>

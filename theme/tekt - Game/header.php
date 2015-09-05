@@ -35,11 +35,7 @@ $(function(){
   <div id="header_wrapper">
     <a href="<?php echo home_url('/')?>" id='logo'><img src="http://i.imgur.com/bFBnqdr.png"></a>
     <div id="right_header" class="right_header">
-<<<<<<< HEAD
-            <a href="<?php bloginfo('wpurl')?>/login" id="login_button">Login</a>
-=======
             <a href="<?php bloginfo('wpurl')?>/wp-admin" id="login_button">Login</a>
->>>>>>> origin/master
       <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
         <div>
           <input type="text" size="20" name="s" id="s" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>

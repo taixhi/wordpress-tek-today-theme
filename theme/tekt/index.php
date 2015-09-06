@@ -39,7 +39,10 @@
 <div id="front_content" class="content">
   <div style="margin-right= 30px">
   <?php
-  query_posts('offset=1');
+  // set the "paged" parameter (use 'page' if the query is on a static front page)
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+  query_posts('offset=1&showposts=0');
   while ( have_posts() ) : the_post(); $postno; $postno++; $column;
   switch ($postno % 3) {
     case 0:
@@ -74,11 +77,22 @@
   </div>
   				                </div><!-- #post-<?php the_ID(); ?> -->
 
-  				<?php endwhile; ?>
+                        <?php endwhile;
+                        next_posts_link(); previous_posts_link(); wp_reset_query();?>
+
           <div class="clearfix"></div>
 </div>
 <div class="clearfix"></div>
 </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Home Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2464117291379765"
+     data-ad-slot="7125487933"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <hr style="background:#888; border:0; height:1px; margin-bottom:10px" />
 <div id=bottom_widgets>
   <?php dynamic_sidebar( 'bottom_widget' ); ?>

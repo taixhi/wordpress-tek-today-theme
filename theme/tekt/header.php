@@ -2,7 +2,7 @@
 <head>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-
+  <meta property="fb:admins" content="100006118022584" />
   <meta charset="utf-8"/>
   <title><?php bloginfo('title')?></title>
   <!--[if lt IE 9]>
@@ -30,6 +30,7 @@ $(function(){
 
 
 </head>
+<body>
 <div id=container>
 <div id="header" class="header">
   <div id="header_wrapper">

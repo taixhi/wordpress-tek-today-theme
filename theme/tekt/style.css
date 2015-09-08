@@ -244,6 +244,15 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-left: 0px;
 	padding-top: 4px;
 }
+#new{
+	position: absolute;
+top: -100px;
+float: right;
+right: 0;
+color: #333;
+padding: 5px;
+background-color: red;
+}
 #nomargin_sidebar{
 	margin-top: 0!important;
 }

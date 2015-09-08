@@ -13,5 +13,10 @@
 </div>
 
 </div>
+
+<!-- Amazon Publisher Studio -->
+<script> var amzn_ps_tracking_id = 'tektod-20'; </script>
+<script async="true" type="text/javascript" src="//ps-us.amazon-adsystem.com/scripts/US/studio.js" charset="UTF-8"></script>
+
 </body>
 </html>

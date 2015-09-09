@@ -245,15 +245,16 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-top: 4px;
 }
 #editorial{
-position: absolute;
-top: -80px;
-float: right;
-color: #fff;
-padding: 5px;
-border: 2px solid #fff;
-background-color: #333;
-font-size: small;
-font-weight: bold;
+	position: absolute;
+	    top: -90px;
+	    float: right;
+	    color: #fff;
+	    padding: 5px;
+	    /* border: 2px solid #B5B5B5; */
+	    background-color: #C10000;
+	    font-size: small;
+	    font-weight: bold;
+	    right: 0;
 }
 #nomargin_sidebar{
 	margin-top: 0!important;

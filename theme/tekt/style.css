@@ -248,12 +248,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	position: absolute;
 	    top: -90px;
 	    float: right;
+			padding: 5px;
+			right: 0;
 	    color: #fff;
-	    padding: 5px;
 	    background-color: #333;
+			border: 2px solid #fff;
 	    font-size: small;
 	    font-weight: bold;
-	    right: 0;
+
 }
 #nomargin_sidebar{
 	margin-top: 0!important;

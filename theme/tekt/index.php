@@ -29,7 +29,7 @@
             <?php
             $author = get_the_author();
             $editor = get_the_modified_author();
-        if ($author == $editor) {
+        if ($author == $editor or $administrator) {
           echo "NEW RELEASE";
         }else {
           echo "EDITORIAL";

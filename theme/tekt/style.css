@@ -250,8 +250,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	    float: right;
 	    color: #fff;
 	    padding: 5px;
-	    /* border: 2px solid #B5B5B5; */
-	    background-color: #C10000;
+	    background-color: #333;
 	    font-size: small;
 	    font-weight: bold;
 	    right: 0;

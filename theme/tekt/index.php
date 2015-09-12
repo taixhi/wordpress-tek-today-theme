@@ -30,9 +30,9 @@
             $author = get_the_author();
             $editor = get_the_modified_author();
         if ($author == $editor) {
-          echo "EDITORIAL";
-        }else {
           echo "NEW RELEASE";
+        }else {
+          echo "EDITORIAL";
         }
               ?></div>
                    <a id ="most_recent" title="<?php the_title(); ?>"><?php the_title(); ?></a>

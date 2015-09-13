@@ -25,16 +25,6 @@
   <div id="recent_post">
     <div style="position: relative;">
           <h2> <?php $recent = new WP_Query("showposts=1"); while($recent->have_posts()) : $recent->the_post();?>
-            <div class="info_banner" id="editorial">
-            <?php
-            $author = get_the_author();
-            $editor = get_the_modified_author();
-        if ($author == $editor || $administrator) {
-          echo "NEW RELEASE";
-        }else {
-          echo "EDITORIAL";
-        }
-              ?></div>
                    <a id ="most_recent" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                    <p id ="subtitle_banner"><?php get_the_subtitle( $post ); ?></p></li>
                    <hr id="line_banner"></hr>

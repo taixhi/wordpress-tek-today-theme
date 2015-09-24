@@ -12,6 +12,19 @@
 
 </script>
 
+<body>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6115636562471434"
+     data-ad-slot="4057358501"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+
 <?php get_header()?>
 
 

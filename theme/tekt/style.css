@@ -567,6 +567,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+ins.adsbygoogle {
+    margin: 0!important;
+}
 input{
 	background: #333;
 	color: #fff;

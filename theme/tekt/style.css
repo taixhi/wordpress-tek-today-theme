@@ -138,7 +138,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	color: #fff;
 	margin: 0 auto;
 	padding-bottom: 10px;
-	padding-left: 10%;
 	padding-top: 10px;
   margin-top: 20px;
 }
@@ -371,6 +370,13 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	text-align: center;
 	color: #fff!important;
 }
+.attachment-post-thumbnail {
+    opacity: 1!important;
+    float: left;
+    width: 10em!important;
+    margin-bottom: 150px;
+    margin-right: 20px;
+}
 .article{
 	background: #ffffff;
 	float: left;
@@ -427,18 +433,23 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-bottom: 0;
 }
 .pagecontent{
-	align: center;
-	background: #ffffff;
-	float: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 0px!important;
-	padding-left: 10px;
+	 	align: center;
+    background: #ffffff;
+    float: center;
+    /* margin-left: 10%; */
+    margin: auto;
+    /* margin-right: 10%; */
+    max-width: 1000px;
+    margin-top: 0px!important;
+    padding-left: 10px;
 }
 .post-catergories{
 	float: right;
 	padding: 0px;
 
+}
+.register-section{
+	float: none!important;
 }
 .reply{
 	text-align: right;
@@ -593,10 +604,10 @@ input[type=text], textarea{
 input[type=text]:focus, textarea:focus{
 	box-shadow: none;
 }
-label{
+/*label{
 	float: left;
 	padding-left: 10px;
-}
+}*/
 
 li{
 	list-style-type: none;

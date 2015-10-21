@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 </div>
 
 <div id="footer">

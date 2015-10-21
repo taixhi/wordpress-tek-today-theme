@@ -149,4 +149,11 @@ function tekt2() {
 
 }
 add_action( 'widgets_init', 'tekt2' );
+
+function howdy_message($translated_text, $text, $domain) {
+    $new_message = str_replace('Howdy', 'Welcome', $text);
+    return $new_message;
+}
+add_filter('gettext', 'howdy_message', 10, 3);
 ?>
+

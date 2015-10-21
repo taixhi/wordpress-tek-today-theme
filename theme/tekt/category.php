@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php get_header(); ?>
 <div id="category_content">
                 <?php if (have_posts()) : ?>
@@ -121,4 +120,3 @@
     </div><!-- END wrap_1280 -->
 
 <?php get_footer(); ?>
->>>>>>> 7047d1bf10a454e9704b9412075a9d8a73dfc014

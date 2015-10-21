@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 </div>
 
 <div id="footer">
@@ -21,7 +20,6 @@
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
-=======
 </div>
 
 <div id="footer">
@@ -44,4 +42,3 @@
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
->>>>>>> 7047d1bf10a454e9704b9412075a9d8a73dfc014

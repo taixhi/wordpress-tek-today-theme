@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * The template for displaying 404 pages (Not Found)
@@ -25,6 +24,3 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
-=======
-uh uh
->>>>>>> 7047d1bf10a454e9704b9412075a9d8a73dfc014

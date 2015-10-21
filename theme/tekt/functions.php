@@ -155,5 +155,11 @@ function howdy_message($translated_text, $text, $domain) {
     return $new_message;
 }
 add_filter('gettext', 'howdy_message', 10, 3);
+
+function remove_footer_admin () {
+echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Designed by <strong>Meher Vohra</strong> | Banter by <strong>Arya Vohra</strong> and <strong>Taichi Kato</strong></a></p>';
+}
+
+add_filter('admin_footer_text', 'remove_footer_admin');
 ?>
 

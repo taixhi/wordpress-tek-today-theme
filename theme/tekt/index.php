@@ -94,15 +94,6 @@ $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 </div>
 <div class="clearfix"></div>
 </div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Home Page -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-2464117291379765"
-     data-ad-slot="7125487933"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 <hr style="background:#888; border:0; height:1px; margin-bottom:10px" />
 <div id=bottom_widgets>
   <?php dynamic_sidebar( 'bottom_widget' ); ?>

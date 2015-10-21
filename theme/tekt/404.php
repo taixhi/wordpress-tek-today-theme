@@ -1,27 +1,26 @@
-<!doctype html>
-<html>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>"/>
-<?php get_header() ?>
+<?php
+/**
+ * The template for displaying 404 pages (Not Found)
+ *
+ */
 
-	<div id="container">
-		<div id="content">
+get_header(); ?>
 
-			<div id="post-0" class="post error404 not-found">
-				<h2 class="entry-title"><?php _e( 'Uh oh.') ?></h2>
-				<div class="entry-content">
-					<p><?php _e( 'Taichi and Arya messed up.' ) ?></p>
-				</div>
-				<form id="searchform-404" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
-					<div>
-						<input id="s-404" name="s" class="text" type="text" value="<?php the_search_query() ?>" size="40" />
-						<input class="button" type="submit" value="<?php _e( 'Find',) ?>" />
-					</div>
-				</form>
-			</div><!-- .post -->
+	<div id="primary" class="content-area">
+		<div id="category_content" class="category_content" role="main">
+
+			<header class="page-header">
+				<h1 class="page-title"><?php _e( 'Not found', 'twentythirteen' ); ?></h1>
+			</header>
+
+			<div class="page-wrapper">
+				<div class="page-content">
+					<h2><?php _e( 'Arya accidentally deleted it'); ?></h2>
+					<p><?php _e( 'oops' ); ?></p>
+				</div><!-- .page-content -->
+			</div><!-- .page-wrapper -->
 
 		</div><!-- #content -->
-	</div><!-- #container -->
+	</div><!-- #primary -->
 
-<?php get_sidebar() ?>
-<?php get_footer() ?>
-</html>
+<?php get_footer(); ?>

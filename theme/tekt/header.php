@@ -39,7 +39,7 @@ $(function(){
             <a href="<?php bloginfo('wpurl')?>/wp-admin" id="login_button">Login</a>
       <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
         <div>
-          <input type="text" size="20" name="s" id="s" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
+          <input class="searchbar"type="text" size="20" name="s" id="s" placeholder="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
           <input type="image" id="searchsubmit" value="Search" class="btn" src="http://i.imgur.com/RBXgNcS.png"/>
         </div>
       </form>

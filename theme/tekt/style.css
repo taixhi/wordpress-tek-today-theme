@@ -115,9 +115,17 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding: 3px 0px 5px 3px;
 	webkit-transition: all 0.30s ease-in-out;
 }
+
 #bottom_widgets{
 	margin: auto;
 	max-width: 1000px;
+}
+#category_content{
+	margin: auto;
+	max-width: 1000px;
+}
+#category_articles_wrapper{
+	width:100%;
 }
 #comments img{
 	border-radius: 50%;
@@ -138,7 +146,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	color: #fff;
 	margin: 0 auto;
 	padding-bottom: 10px;
-	padding-left: 10%;
 	padding-top: 10px;
   margin-top: 20px;
 }
@@ -244,7 +251,19 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-left: 0px;
 	padding-top: 4px;
 }
-
+#editorial{
+	position: absolute;
+	    top: -90px;
+	    float: right;
+			padding: 5px;
+			margin-right: 20px;
+			right: 0;
+	    color: #fff;
+	    background-color: #333;
+			border: 2px solid #fff;
+	    font-size: small;
+	    font-weight: bold;
+}
 #nomargin_sidebar{
 	margin-top: 0!important;
 }
@@ -345,6 +364,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 #single_utility{
 	width: 100%
 }
+#util_cat{
+  color: #888;
+	font-size: small;
+}
 #visual_main{
 	text-align: center;
 }
@@ -358,6 +381,12 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	width: 100%;
 	text-align: center;
 	color: #fff!important;
+}
+.category_thumb{
+    opacity: 1!important;
+    float: left;
+    width: 10em!important;
+    margin-right: 20px;
 }
 .article{
 	background: #ffffff;
@@ -415,18 +444,23 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding-bottom: 0;
 }
 .pagecontent{
-	align: center;
-	background: #ffffff;
-	float: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 0px!important;
-	padding-left: 10px;
+	 	align: center;
+    background: #ffffff;
+    float: center;
+    /* margin-left: 10%; */
+    margin: auto;
+    /* margin-right: 10%; */
+    max-width: 1000px;
+    margin-top: 0px!important;
+    padding-left: 10px;
 }
 .post-catergories{
 	float: right;
 	padding: 0px;
 
+}
+.register-section{
+	float: none!important;
 }
 .reply{
 	text-align: right;
@@ -487,6 +521,9 @@ a#read_more{
 	font-weight: bold;
 	margin-top: -10px;
 	padding: 6px 8px 6px 8px;
+}
+a.category-title-link{
+	font-size: x-large;
 }
 a:link {
   color: #000;
@@ -555,16 +592,23 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-input{
+ins.adsbygoogle {
+    margin: 0!important;
+}
+input#form-validation-field-0, #bbp_topic_title, #bbp_topic_tags{
+	margin: 0;
+	border: grey Solid 1px
+}
+.searchbar{
 	background: #333;
 	color: #fff;
 	margin-left: 5px;
 }
-input.placeholder{
+.searchbar.placeholder{
 	color: #ffffff;
 	padding-left: 5px;
 }
-input[type=text], textarea{
+.searchbar[type=text], textarea{
 	border: 2px solid #DDDDDD;
 	font-weight: lighter;
 	margin: 5px 1px 3px 0px;
@@ -575,13 +619,13 @@ input[type=text], textarea{
 	padding: 3px 0px 5px 3px;
 	webkit-transition: all 0.30s ease-in-out;
 }
-input[type=text]:focus, textarea:focus{
+.searchbar[type=text]:focus, textarea:focus{
 	box-shadow: none;
 }
-label{
+/*label{
 	float: left;
 	padding-left: 10px;
-}
+}*/
 
 li{
 	list-style-type: none;

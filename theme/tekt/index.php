@@ -12,19 +12,6 @@
 
 </script>
 
-<body>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Main -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6115636562471434"
-     data-ad-slot="4057358501"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</body>
-
 <?php get_header()?>
 
 
@@ -38,6 +25,16 @@
   <div id="recent_post">
     <div style="position: relative;">
           <h2> <?php $recent = new WP_Query("showposts=1"); while($recent->have_posts()) : $recent->the_post();?>
+            <div class="info_banner" id="editorial">
+            <?php
+            $author = get_the_author();
+            $editor = get_the_modified_author();
+        if ($author == $editor or $administrator) {
+          echo "NEW RELEASE";
+        }else {
+          echo "EDITORIAL";
+        }
+              ?></div>
                    <a id ="most_recent" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                    <p id ="subtitle_banner"><?php get_the_subtitle( $post ); ?></p></li>
                    <hr id="line_banner"></hr>
